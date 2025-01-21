@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <style>
+       
+        body{
+            background-color: black;
+            height: 80vh;
+            width: 95%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        h1{
+            margin-left: 140px;
+        }
+        label{
+            font-size: 20px;
+        }
+        input{
+            padding: 10px;
+            border: 0px solid white;
+            border-radius: 10px;
+        }
+        textarea{
+            padding: 10px;
+            border: 0px solid white;
+            border-radius: 10px;
+        }
+        .main-container{
+            background-color: lightgray;
+            width: 100%;
+            padding: 70px;
+            border: 2px solid white;
+            border-radius: 10px;
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+        }
+        button{
+            padding: 18px;  
+            border: 0px solid white;
+            border-radius: 10px;
+            background-color: black;
+            color: white;
+            font-size: 20px;
+            cursor: pointer;
+        }
+         button:hover{
+            background-color: white;
+            color: rgb(2, 2, 22);
+        }
+    </style>
+</head>
+<body>
+
+    <h1 style="color: wheat;">Personal Details</h1>
+    <form action="chapter-7.html" onsubmit="alert('Form Submitted Successfully!')" method="post">
+    <div class="main-container">
+        <label for="phoneno"><strong>Enter Phone Number:</strong></label>
+        <input type="text" name="phoneno" placeholder="9999929919"oattern="[0-9]{10}" required title="10 digit number">
+        <label for="comments"><strong>Comments:</strong></label>
+        <textarea name="comments" id="comments"></textarea>
+        <label for="password"><strong>Enter Password:</strong></label>
+        <input type="password" name="password" id="password" pattern=".{8,}" required title="8 characters minimum"><br>
+        <button type="submit">Submit</button>
+    </div>
+    </form>
+
+</body>
+</html>
