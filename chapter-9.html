@@ -16,9 +16,17 @@
     <hr>
 
     <h1>Audio Player</h1>
+    <h1>mp3</h1>
     <audio controls autoplay>
-    <source src="audio.mp3" type="audio/mp3">
-    <source src="audio.mp3" type="audio/mp3">
+    <source src="mann_mera.mp4" type="audio/mp3">
+    </audio>
+    
+   
+ 
+    <h2>mpeg</h2>
+    <audio controls autoplay>
+    <source src="song.mp3" type="audio/mpeg">
+    </audio>
 
 
     <h1>View Youtube Video </h1>
@@ -33,6 +41,40 @@
     autoplay
     >
       </iframe>
+    <br><br>
+    <hr>
+    <table border="2">
+     <caption>Video & Audio</caption>
+        
+            <th>Video</th>
+            <th>Audio Format</th>
+            <th>Audio Player</th>
+        
+        <tr>
+            <td rowspan="2">
+                <video  width="400px" height="400px"   controls>
+                <source src="mann_mera.mp4" type="video/mp4">
+                <track src="mann_mera.vtt" kind="subtitles" srclang="en" label="English">
+                </video>
+            </td>
+            <td>mp3</td>
+            <td >
+                <audio controls autoplay>
+                <source src="mann_mera.mp4" type="audio/mp3">
+                </audio>
+            </td>
+        </tr>
+
+        <tr>
+            
+            <td>mpeg</td>
+            <td>
+                <audio controls autoplay>
+                <source src="song.mp3" type="audio/mpeg">
+                </audio>
+            </td>
+        </tr>
+    </table>
     
 </body>
 </html>
