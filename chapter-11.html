@@ -32,12 +32,21 @@
     </form>
 
     <!-- embeding video with poster image and controls -->
-    <h1>Embded Video</h1>
+    <h1>Embed Video</h1>
     <video style="background-color: red;" width="400px"  poster="./namuna.png"  controls autoplay>
     <source src="mann_mera.mp4" type="video/mp4">
     <track src="mann_mera.vtt" kind="subtitles" srclang="en" label="English">
     </video>
 
-    
+    <!-- canvas  -->
+    <h3>Creating Rectangle using Canvas</h3>
+    <canvas id="myCanvas" width="200" height="100" style="border:1px solid #000000;"></canvas>
+    <script>
+        var c = document.getElementById("myCanvas");
+        var ctx = c.getContext("2d");
+        ctx.fillStyle = "blue";
+        ctx.fillRect(0, 0, 200, 100);
+    </script>
+
 </body>
 </html>
